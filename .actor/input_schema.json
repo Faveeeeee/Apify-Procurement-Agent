@@ -1,0 +1,38 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "SME Agent Scraping & Matching Tool",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "sme_profile": {
+            "title": "SME Profile",
+            "type": "object",
+            "description": "Details about the SME including capabilities, certifications, and experience.",
+            "editor": "json",
+            "prefill": {
+                "company_name": "Lagos Tech Solutions",
+                "services": ["Software Development", "Cloud Migration", "Cybersecurity"],
+                "certifications": ["ISO 27001", "NITDA"],
+                "years_experience": 4,
+                "location": "Lagos"
+            }
+        },
+        "target_urls": {
+            "title": "Procurement Webpages to Scrape",
+            "type": "array",
+            "description": "List of procurement website URLs to scrape for tender opportunities.",
+            "editor": "json",
+            "prefill": [
+                "https://tendersnigeria.com"
+            ]
+        },
+        "modelName": {
+            "title": "OpenAI Model",
+            "type": "string",
+            "description": "The OpenAI model to use for evaluating tender matches.",
+            "enum": ["gpt-4o", "gpt-4o-mini"],
+            "default": "gpt-4o-mini"
+        }
+    },
+    "required": ["sme_profile"]
+}

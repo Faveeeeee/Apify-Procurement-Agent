@@ -1,0 +1,12 @@
+{
+    "actor-start": {
+        "eventTitle": "Price for Actor start",
+        "eventDescription": "Flat fee charged when the procurement agent starts.",
+        "eventPriceUsd": 0.05
+    },
+    "task-completed": {
+        "eventTitle": "Price for completing evaluation",
+        "eventDescription": "Flat fee charged after successfully matching SME with tenders.",
+        "eventPriceUsd": 0.20
+    }
+}

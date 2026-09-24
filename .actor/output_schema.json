@@ -1,0 +1,14 @@
+{
+    "$schema": "https://apify.com/schemas/v1/output.ide.json",
+    "actorOutputSchemaVersion": 1,
+    "title": "Procurement Agent Output Schema",
+    "type": "object",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Match Results Dataset",
+            "description": "URL to the dataset containing evaluation match scores.",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

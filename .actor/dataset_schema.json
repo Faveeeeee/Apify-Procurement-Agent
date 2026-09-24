@@ -1,0 +1,18 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "views": {
+        "overview": {
+            "title": "Tender Match Overview",
+            "transformation": {
+                "fields": [
+                    "sme_name",
+                    "evaluated_tenders"
+                ]
+            },
+            "display": {
+                "component": "table"
+            }
+        }
+    }
+}
